@@ -1,9 +1,10 @@
 {
   "name": "weather-app",
+  "homepage": "https://Jacob-Sa.github.io/weather-app",
   "version": "0.1.0",
   "engines": {
     "node": "12.13.1",
-    "npm":"6.12.1"
+    "npm": "6.12.1"
   },
   "private": true,
   "dependencies": {
@@ -13,6 +14,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.10.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "axios": "^0.19.0",
+    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.0",
@@ -23,6 +25,8 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
